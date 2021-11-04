@@ -1,0 +1,59 @@
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='apple-touch-fullscreen', content='yes')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='mobile-web-app-capable', content='yes')
+    //- meta(name='viewport', content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover")
+    meta(name="viewport" content="width=device-width, height=device-height, minimum-scale=1, maximum-scale=1, user-scalable=no")
+    meta(name='theme-color', content='#b0b0b0')
+    meta(name='msapplication-navbutton-color', content='#b0b0b0')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    title=t
+
+    // link(href="" rel="shortcut icon" id='dynaIcon')
+    // link(href="" rel="apple-touch-icon image_src" id='dynaAppleIcon')
+    link(rel="stylesheet", id="dynaStyles")
+    link(rel="stylesheet", id="templateStyle")
+    link(rel='stylesheet', href=rs+'/build/css/sbo-style.min.css?v='+v)
+    link(rel='stylesheet', href=rs+'/build/css/build.min.css?v='+v)
+
+    script(src=rs+"/plugins/socket.io/socket.io.js")
+    script(src=rs+'/build/js/vendor.js?v='+v)
+    script(async src="https://www.googletagmanager.com/gtag/js?id="+gTag)
+    script.
+      const rsPath = !{JSON.stringify(rs)};
+      const userData = !{JSON.stringify(user)};
+      const arsPath = !{JSON.stringify(ars)};
+      const wsPath = !{JSON.stringify(ws)};
+      const computedMaxPayout = !{JSON.stringify(computedMaxPayout)};
+      const sversion = !{JSON.stringify(v)};
+      const tableID = !{JSON.stringify(table)};
+      const isSBO = true;
+      const gID = !{JSON.stringify(gTag)};
+    script.
+        console.log('%c Dragon Tiger Multiplayer | v'+sversion+' ', 'background: #079776; color: #FAFF00;')
+
+        function createWindow(link, w, h) {
+          w = (w) ? w : 940;
+          h = (h) ? h : 620;
+          window.open(link, "same_window",`width=${w}, height=${h}`);
+        };
+      //- <!-- Global site tag (gtag.js) - Google Analytics -->
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', gID);
+  body#body
+    div#svy-main
+      //- div#savvy_ann_container.pull-left
+      //-   div#rtext(style="height: 26px;")
+          
+      //- include header
+      include game/game_ui
+      //- include game/blocking_orientation
+
+    script(src=rs+'/build/js/game-build.min.js?v='+v)
+

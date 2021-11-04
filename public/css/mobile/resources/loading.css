@@ -1,0 +1,382 @@
+.svy-loading-page {
+	position: absolute;
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.svy-loading-page:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+
+.svy-loading-page .svy-loading-cont {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	background: -webkit-linear-gradient(rgb(8, 116, 96) 2%,rgb(19, 34, 31) 66%,rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(rgb(8, 116, 96) 2%,rgb(19, 34, 31) 66%,rgba(0,0,0,1) 100%);
+	background: -moz-linear-gradient(rgb(8, 116, 96) 2%,rgb(19, 34, 31) 66%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(rgb(8, 116, 96) 2%,rgb(19, 34, 31) 66%,rgba(0,0,0,1) 100%);
+
+}
+
+.svy-loading-wrap {
+	width: 100%;
+	height: 80vmin;
+	position: absolute;
+	margin: auto;
+	/*top: 0;
+	bottom: 0;*/
+}
+
+.svy-table-loading-wrap {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+.svy-table-loading-wrap #animationCanvas {
+	display: block;
+	position: relative;
+	height: 69%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: -1.4vmin;
+	padding: 0 !important;
+}
+.svy-table-loading-wrap .svy-progress-wrap{
+	display: block;
+	position: absolute;
+	height: 100%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 95%;
+	padding: 0!important;
+	margin-top: 8vmin;
+}
+.svy-table-loading-wrap .svy-logo-canvas-cont {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 45%;
+    max-height: 22vmin;
+}
+.svy-table-loading-wrap .svy-progress-percent {
+    font-size: 4.7vmin;
+    text-align: center;
+    font-weight: 900;
+    color: #ae1279;
+    letter-spacing: 1.1vmin;
+    padding-top: 9vmin;
+    outline: #00008b;
+    -webkit-text-stroke: .5px #ae1279;
+    transform: scaleX(1.1);
+    -webkit-text-stroke: 1.3px #ae1279;
+    transform: scaleX(1.2);
+}
+.svy-table-loading-wrap .svy-progress-label {
+    font-size: 2.4vmin;
+    text-align: center;
+    color: rgba(174,18,121,1);
+    font-weight: 900;
+    letter-spacing: 0.4vmin;
+    padding-top: 1.4vmin;
+}
+.svy-table-loading-wrap .svy-progress-border {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2.5vmin;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    float: left;
+    border: .1vmin solid rgba(255,197,0,1);
+    border-radius: 2vmin;
+    overflow: hidden;
+}
+.svy-table-loading-wrap .svy-progress-bar-cont {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 5vmin;
+    float: left;
+    padding-top: 1.8vmin;
+}
+/*****
+ * PROGRESS
+ *****/
+.svy-progress-cont {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+
+.svy-progress-wrap {
+	display: block;
+	position: absolute;
+	height: 100%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	padding: 0 10vmin;
+	width: 76%;
+}
+
+.svy-progress-bar-cont {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 5vmin;
+	float: left;
+}
+
+.svy-progress-bar-wrap {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.svy-progress-border {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1.5vmin;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	float: left;
+
+	border: 0.1vmin solid rgba(255, 197, 0, 1);
+	border-radius: 2vmin;
+	overflow: hidden;
+}
+
+.svy-progress-bar {
+	height: 85%;
+	margin: 1px;
+	background: rgba(180, 19, 125, 1);
+	box-shadow: inset 0 0 0.5vmin rgba(0, 0, 0, 0.8);
+
+	border-radius: 2vmin;
+	left: 0;
+	float: left;
+}
+
+.svy-progress-percent {
+	font-size: 2.8vmin;
+	text-align: center;
+	font-weight: 900;
+	color: rgb(174, 18, 121);
+	letter-spacing: .5vmin;
+	padding-top: 6vmin;
+	outline: darkblue;
+	-webkit-text-stroke: 0.5px #ae1279;
+	transform: scaleX(1.1);
+}
+
+.svy-progress-label {
+	font-size: 1.2vmin;
+	text-align: center;
+	color: rgba(174,18,121,1);
+	font-weight: 900;
+	letter-spacing: 0.3vmin;
+}
+
+/*****
+ * MOTD
+ *****/
+.svy-progress-message {
+	text-align: center;
+	width: 100%;
+	height: max-content;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+/*****
+ * ANIMATION
+ *****/
+.svy-loading-animation-cont {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 45%;
+}
+
+.svy-loading-animation-wrap {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.svy-loading-animation-wrap>canvas {
+	display: block;
+	position: relative;
+	height: 65%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	padding-top: 3.5vmin;
+	/*padding-top: 5vmin;*/
+}
+
+/*****
+ * LOGO
+ *****/
+.svy-logo-canvas-cont {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 29%;
+	max-height: 15vmin;
+}
+
+.svy-logo-canvas-wrap {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.svy-logo-canvas-wrap>canvas {
+	display: block;
+	position: relative;
+	height: 100%;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+/*table*/
+.svy-table-cont .svy-loading-page {
+    position: absolute;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.svy-table-cont .svy-table-loading-wrap {
+	width: 100%;
+	height: 75%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+.svy-table-cont .svy-table-loading-wrap #animationCanvas {
+	display: block;
+	position: relative;
+	height: 69%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: -2%;
+	padding: 0!important;
+}
+.svy-table-cont .svy-table-loading-wrap .svy-progress-wrap{
+	display: block;
+	position: absolute;
+	height: 100%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 95%;
+	padding: 0!important;
+	margin-top: 2.3%;
+}
+.svy-table-cont .svy-table-loading-wrap .svy-logo-canvas-cont {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 45%;
+    max-height: 39%;
+}
+.svy-table-cont .svy-table-loading-wrap .svy-progress-bar-cont {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 8.7%;
+    float: left;
+    padding-top: 2%;
+}
+.svy-table-cont .svy-table-loading-wrap .svy-progress-percent {
+	padding-top: 10%;
+}
+.svy-table-cont .svy-table-loading-wrap .svy-progress-border {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 37%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	float: left;
+	border: .1vmin solid rgba(255,197,0,1);
+	border-radius: 2vmin;
+	overflow: hidden;
+}
+
+
+@media only screen 
+and (min-width: 580px){
+	.svy-table-cont .svy-table-loading-wrap .svy-progress-percent {
+		letter-spacing: 0.7vmin;
+		font-size: 4.4vmin;
+	}
+}
+
+@media only screen 
+and (min-width: 700px){
+	.svy-table-cont .svy-table-loading-wrap .svy-progress-percent {
+		letter-spacing: 0.7vmin;
+		font-size: 3.4vmin;
+	}
+	.svy-table-cont .svy-table-loading-wrap .svy-progress-label {
+	    font-size: 1.9vmin;
+	}
+}
+
+@media only screen 
+and (min-width: 944px){
+	.svy-table-cont .svy-table-loading-wrap .svy-progress-percent {
+		letter-spacing: 0.3vmin;
+	    font-size: 3.2vmin;
+	}
+	.svy-table-cont .svy-table-loading-wrap .svy-progress-label {
+	    font-size: 1.4vmin;
+	}
+}
+
+@media only screen 
+and (min-width: 1920px){
+	.svy-table-cont .svy-table-loading-wrap .svy-progress-percent {
+		letter-spacing: 0.3vmin;
+	    font-size: 2.6vmin;
+	}
+}

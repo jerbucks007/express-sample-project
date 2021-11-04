@@ -1,0 +1,290 @@
+
+{
+  "_comment": "################### SAVVY ERROR CODE ############################################",
+	"99903": {
+    "code": "99903", 
+    "server_desc": "Request API ERROR",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "99904": {
+    "code": "99904", 
+    "server_desc": "API Terminate Game",
+    "description": "The game was terminated. Please try again later or contact our customer support."  
+  },
+  "4007": {
+    "code": "4007", 
+    "server_desc": "Route Not Found",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "5001": {
+    "code": "5001", 
+    "server_desc": "JSON Schema Validation Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "5002": {
+    "code": "5002", 
+    "server_desc": "DB Connection Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "5003": {
+    "code": "5003", 
+    "server_desc": "No Records Found",
+    "description": "The game is not available. Please try again later or contact our customer support."  
+  },
+  "5005": {
+    "code": "5005", 
+    "server_desc": "Unhandled Code Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "5008": {
+    "code": "5008", 
+    "server_desc": "Redis Connection Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "5009": {
+    "code": "5009", 
+    "server_desc": "Parse Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "5039": {
+    "code": "5039", 
+    "server_desc": "No Response on Request",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "5040": {
+    "code": "5040", 
+    "server_desc": "3 Times Attempt Failed",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "5041": {
+    "code": "5041", 
+    "server_desc": "One of the clients have error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "9999": {
+    "code": "9999", 
+    "server_desc": "Booted",
+    "description": " Your game session has ended. Please contact our customer support."  
+  },
+  "10000": {
+    "code": "10000", 
+    "server_desc": "Internal Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "10001": {
+    "code": "10001", 
+    "server_desc": "SSO Request Expired",
+    "description": "Please re-login"  
+  },
+  "10002": {
+    "code": "10002", 
+    "server_desc": "Player is not logged in",
+    "description": "Please re-login"  
+  },
+  "10003": {
+    "code": "10003", 
+    "server_desc": "Multiple login",
+    "description": "You have multiple login."  
+  },
+  "10004": {
+    "code": "10004", 
+    "server_desc": "API Suspended",
+    "description": "The game is not available. Please try again later or contact our customer support."  
+  },
+  "10005": {
+    "code": "10005", 
+    "server_desc": "IP Mismatch",
+    "description": "The game is not available. Please try again later or contact our customer support."  
+  },
+  "10013": {
+    "code": "10013", 
+    "server_desc": "Over max bet",
+    "description": "More than maximum bet"  
+  },
+  "10014": {
+    "code": "10014", 
+    "server_desc": "Lower than min bet",
+    "description": "Less than minimum bet"  
+  },
+  "10015": {
+    "code": "10015", 
+    "server_desc": "Over max per race",
+    "description": "More than maximum bet limit"  
+  },
+  "10016": {
+    "code": "10016", 
+    "server_desc": "Over bet credit",
+    "description": "Not enough balance to bet"  
+  },
+  "10017": {
+    "code": "10017", 
+    "server_desc": "Bet action locked",
+    "description": "Bet action locked. Please contact our customer support."  
+  },
+  "10018": {
+    "code": "10018", 
+    "server_desc": "Account closed",
+    "description": "Your account has been closed. Please contact our customer support."  
+  },
+  "10019": {
+    "code": "10019", 
+    "server_desc": "Account suspend",
+    "description": "Your account has been suspended. Please contact our customer support."  
+  },
+  "10020": {
+    "code": "10020", 
+    "server_desc": "Bet setting problem",
+    "description": "There is a problem with your bet. Please contact our customer support."  
+  },
+  "10024": {
+    "code": "10024", 
+    "server_desc": "PT problem",
+    "description": "There is a problem with your bet. Please contact our customer support."  
+  },
+  "10028": {
+    "code": "10028", 
+    "server_desc": "Bet is void",
+    "description": "Your bet is void. Please contact our customer support. We are sorry for any inconvenience this may have caused you."  
+  },
+  "10029": {
+    "code": "10029", 
+    "server_desc": "Over stake limit",
+    "description": "More than maximum stake limit"  
+  },
+  "10030": {
+    "code": "10030", 
+    "server_desc": "Account is not activated",
+    "description": "Your account is not activated. Please contact our customer support."  
+  },
+  "10031": {
+    "code": "10031", 
+    "server_desc": "Self Excluded",
+    "description": "Your account has been self-excluded. Please contact our customer support."  
+  },
+  "10032": {
+    "code": "10032", 
+    "server_desc": "Black listed country login",
+    "description": "Access denied. This website is not available in your country. Please contact our customer support."  
+  },
+  "10033": {
+    "code": "10033", 
+    "server_desc": "Invalid username or password",
+    "description": "Invalid username or password. Please try again."  
+  },
+  "10034": {
+    "code": "10034", 
+    "server_desc": "Incomplete Game",
+    "description": "You have an incomplete game. Please contact our customer support."  
+  },
+  "10035": {
+    "code": "10035", 
+    "server_desc": "Remaining Credit",
+    "description": "Remaining Credit. Please contact our customer support"  
+  },
+  "10040": {
+    "code": "10040", 
+    "server_desc": "Stop trading",
+    "description": "The game is under maintenance. Please try again later."  
+  },
+  "20000": {
+    "code": "20000", 
+    "server_desc": "External error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "20001": {
+    "code": "20001", 
+    "server_desc": "Invalid request xml",
+    "description": "The game is not available. Please try again later or contact our customer support."  
+  },
+  "20002": {
+    "code": "20002", 
+    "server_desc": "Same call Id, and previous request is already processed successfully",
+    "description": "The game is not available. Please try again later or contact our customer support."  
+  },
+  "21020": {
+    "code": "21020", 
+    "server_desc": "No record is found, or no change are applied",
+    "description": "The game is not available. Please try again later or contact our customer support."  
+  },
+  "29999": {
+    "code": "29999", 
+    "server_desc": "DB Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  }, 
+  "1970001": {
+    "code": "1970001", 
+    "server_desc": "Game Terminated",
+    "description": "The game was terminated. Please try again later or contact our customer support."  
+  },
+  "1970002": {
+    "code": "1970002", 
+    "server_desc": "Unable to find match",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "1970003": {
+    "code": "1970003", 
+    "server_desc": "Insufficient balance",
+    "description": "You don't have enough balance to find a match."  
+  },
+  "1970004": {
+    "code": "1970004", 
+    "server_desc": "Profile is closed",
+    "description": "This profile was closed. Please select another profile."  
+  },
+  "1970005": {
+    "code": "1970005", 
+    "server_desc": "Session Expired",
+    "description": "Your session was expired. Please re-login to the game."  
+  },
+  "1970006": {
+    "code": "1970006", 
+    "server_desc": "IP not verified",
+    "description": "Your session was expired. Please re-login to the game."  
+  },
+  "1970007": {
+    "code": "1970007", 
+    "server_desc": "Header not verified",
+    "description": "Your session was expired. Please re-login to the game."
+  },
+  "1970008": {
+    "code": "1970008", 
+    "server_desc": "Multi window detected",
+    "description": "Multi window detected. The previous window will be disconnected."
+  },
+  "1970009": {
+    "code": "1970009",
+    "server_desc": "Profile is closed",
+    "description": "This profile was closed. Please choose another profile."
+  },
+
+  "1970100": {
+    "code": "1970100", 
+    "server_desc": "Database Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "1970101": {
+    "code": "1970101", 
+    "server_desc": "Internal Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "1970102": {
+    "code": "1970102", 
+    "server_desc": "Request Error",
+    "description": "An error occurred. Please try again later or contact our customer support."  
+  },
+  "1970103": {
+    "code": "1970103", 
+    "server_desc": "Cannot connect to the game server",
+    "description": "Cannot connect to the server, please re-load the game."  
+  },
+  "1970104": {
+    "code": "1970104", 
+    "server_desc": "No Available Server",
+    "description": "There are no game server are available. Please try again later."  
+  },
+  "xxx": {
+    "code": "xxx", 
+    "server_desc": "",
+    "description": ""  
+  }
+}

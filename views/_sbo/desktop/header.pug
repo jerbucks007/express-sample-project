@@ -1,0 +1,30 @@
+//- SBOBET GAME HEADER
+#header.sbo_header.popup-header
+	//- PRIMARY HEADER
+	.top
+		//- SBO HEADER ICON
+		a.header_logo.pull-left
+		//- Betting Rules & Help Container
+		.pull-right(style='color: #000;')
+			#linkedBettingRules.header-option
+				span.rules
+				span#link-rules Betting Rules
+			#linkedHelp.header-option
+				span#link-help.help
+				span Help
+			.timezone
+				span#datetime
+	//- SECONDARY HEADER
+	.bottom.pull-right(style='margin-top: 10px;')
+		//- Balance, Balance & Statement Buttons Container
+		.status-header.pull-right
+			#linkedStatement.status-button Statement
+			#linkedBalance.status-button Balance
+			.status-balance
+				.coin
+				.currency
+				#bet_credit.balance
+				span#update_balance.update.available_balance
+		//- Maxpayout Container
+		.label.label-primary.payout.pull-right
+			span.maxpayout

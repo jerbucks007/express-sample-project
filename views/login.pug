@@ -1,0 +1,82 @@
+doctype html
+html
+	head
+		base(href="/")
+		title Standard App | Login
+		meta(charset='utf-8')
+		meta(name='apple-touch-fullscreen', content='yes')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='mobile-web-app-capable', content='yes')
+		meta(name='viewport', content='width=320, initial-scale=1')
+		meta(name='theme-color', content='#b0b0b0')
+		meta(name='msapplication-navbutton-color', content='#b0b0b0')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='apple-mobile-web-app-status-bar-style', content='black')
+		|
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+		// load bootstrap css
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+		// load fontawesome
+		
+
+	body
+		.container
+			.col-sm-6.col-sm-offset-3
+				h1
+					span.fa.fa-sign-in
+					|  Log in
+					#message
+					if message != undefined
+						if !success
+							h3.text-center.alert.alert-danger  #{message}
+						else
+							h3.text-center.alert.alert-success  #{message}
+				form.login(method="post", action='/login')
+					.form-group
+						label Username
+						|
+						input.form-control(type='text', name='username', placeholder="Username", autofocus="true", required="true")
+						|
+					.form-group
+						label Password
+						|
+						input.form-control(type='password', placeholder="Password", name="password", required="true")
+						|
+					div.checkbox
+						input(type='checkbox', name="passUpdate")
+						label Update Password
+					div.checkbox
+						input(type='checkbox', name="mobile")
+						label Login as Mobile
+					Label Languages:
+					div.form-group
+						label.form-check.label
+						input.form-check-input(type='radio', name="lang" value="id" checked)
+						label Bahasa Indonesia
+						label.form-check.label
+						input.form-check-input(type='radio', name="lang" value="en")
+						label English
+						br
+						label.form-check.label
+						input.form-check-input(type='radio', name="lang" value="vi")
+						label Vietnamese
+						label.form-check.label
+						input.form-check-input(type='radio', name="lang" value="zh-cn")
+						label Simplified Chinese
+						br
+						label.form-check.label
+						input.form-check-input(type='radio', name="lang" value="zh-tw")
+						label Traditional Chinese
+						label.form-check.label
+						input.form-check-input(type='radio', name="lang" value="th")
+						label Thai
+					p
+						button.btn.btn-warning.btn-lg(type='submit') Log in
+				|
+				hr
+				|
+				p
+					| Don't have an account? 
+					a(href='/signup') Sign up

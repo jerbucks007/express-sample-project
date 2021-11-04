@@ -1,0 +1,86 @@
+doctype html
+html
+	head
+		base(href="/")
+		title Standard App | Signup
+		meta(charset='utf-8')
+		meta(name='apple-touch-fullscreen', content='yes')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='mobile-web-app-capable', content='yes')
+		meta(name='viewport', content='width=320, initial-scale=1')
+		meta(name='theme-color', content='#b0b0b0')
+		meta(name='msapplication-navbutton-color', content='#b0b0b0')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='apple-mobile-web-app-status-bar-style', content='black')
+		|
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+		// load bootstrap css
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+		// load fontawesome
+		
+		script.
+			const responseMessage = !{JSON.stringify(message)};
+			const responseStatus = !{JSON.stringify(success)};
+			const resourcePath = !{JSON.stringify(rs)};
+			
+	body
+		.container
+			.col-sm-6.col-sm-offset-3
+				h1
+					span.fa.fa-sign-in
+					|  Sign up
+					#message
+					if message != undefined
+						if !success
+							h3.text-center.alert.alert-danger  #{message}
+						else
+							h3.text-center.alert.alert-success  #{message}
+				form(action='/signup', method='post')
+					.form-group
+						label Username
+						|
+						input.form-control(type='text', name='username', placeholder="Username", autofocus="true", required="true")
+						|
+					.form-group
+						label Password
+						|
+						input.form-control(type='password', placeholder="Password", name="password", required="true")
+						|
+					.form-group
+						Label Currency:
+						select.form-control(name='currency')
+							option(value='AUD') AUD - Australian Dollar
+							option(value='BDT') BDT - Bangladeshi Taka
+							option(value='CAD') CAD - Canadian Dollar
+							option(value='CHF') CHF - Swiss Franc
+							option(value='CNY') CNY - Chinese Yuan
+							option(value='EUR') EUR - Euro
+							option(value='GBP') GBP - British Pound
+							option(value='HKD') HKD - Hong Kong Dollar
+							option(value='IDR' selected) IDR - Indonesian Rupiah
+							option(value='JPY') JPY - Japanese Yen
+							option(value='KRW') KRW - Korean Won
+							option(value='LKR') LKR - Sri Lankan Rupee
+							option(value='MYR') MYR - Malaysian Ringgit
+							option(value='NIO') NIO - Nicaraguan Cordoba
+							option(value='NOK') NOK - Norwegian Krone
+							option(value='NZD') NZD - New Zealand Dollar
+							option(value='PHP') PHP - Philippines Peso
+							option(value='SEK') SEK - Swedish Krona
+							option(value='SGD') SGD - Singaporean Dollar
+							option(value='THB') THB - Thai Baht
+							option(value='TMP') TMP - East Timor Rupiah
+							option(value='USD') USD - United Stated Dollar
+							option(value='VND') VND - Vietnamese Dong
+							option(value='ZAR') ZAR - South African Rand
+							option(value='ZWD') ZWD - Zimbabwean Dollar
+					p
+						button.btn.btn-warning.btn-lg(type='submit') Sign up
+					|
+					hr
+					|
+					p
+						| Already have an account? 
+						a(href='/login') Log in

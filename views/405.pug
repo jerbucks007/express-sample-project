@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title 405 - Page not found
+    meta(charset='utf-8')
+    meta(name='apple-touch-fullscreen', content='yes')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='mobile-web-app-capable', content='yes')
+    meta(name='viewport', content='width=320, initial-scale=1')
+    meta(name='theme-color', content='#b0b0b0')
+    meta(name='msapplication-navbutton-color', content='#b0b0b0')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    |
+    link(rel="stylesheet" href=rs+'/build/css/error-styles.css?v='+v)
+    script.
+      var g = window.open('','_self');
+      setTimeout(function(){
+        g = window.close();
+      },1000);
+  body
+    div#bg-overlays
+      div#center
+        div#pageCont
+          div.pageNotFound-container
+            h1.f0f-h1.h1 Sorry
+            span#image404.image
+            h1.notFound-h1.h1 PAGE NOT FOUND
+            p#message404.message The page you're looking was not found or unavailable
